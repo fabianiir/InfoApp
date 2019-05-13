@@ -36,6 +36,7 @@ public class RegistrarFragment extends Fragment {
     String BaseUrl = "http://infopower.sytes.net:8060/InfoApp/webresources/glpservices/";
     String token;
     String usuario;
+    String pass;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -76,6 +77,7 @@ public class RegistrarFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v= inflater.inflate(R.layout.fragment_registrar, container, false);
         final EditText editUsuario = v.findViewById(R.id.edtUsuario);
+        final EditText editPass = v.findViewById(R.id.edtPassword);
         final TextView mensaje = v.findViewById(R.id.mensaje);
         final Button btnLogin =(Button) v.findViewById(R.id.btnLogin);
 
@@ -104,6 +106,7 @@ public class RegistrarFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 usuario = editUsuario.getText().toString();
+                pass = editPass.getText().toString();
 
                 Gson gson = new GsonBuilder()
                         .setLenient()
@@ -114,25 +117,31 @@ public class RegistrarFragment extends Fragment {
                         .build();
 
                 Servicio service = retrofit.create(Servicio.class);
-                Call call = service.login(usuario, token);
+                Call call = service.login(usuario, token,pass);
                 call.enqueue(new Callback() {
                     @Override
                     public void onResponse(Call call, Response response) {
                         ObjetoRes resObj = (ObjetoRes) response.body();
-                        if (resObj.geterror().equals("false")) {
-                            btnLogin.setVisibility(View.GONE);
-                            editUsuario.setVisibility(View.GONE);
-                            getActivity().findViewById(R.id.textInputLayout).setVisibility(View.GONE);
-                            mensaje.setVisibility(View.VISIBLE);
-                            mensaje.setText(resObj.getUser() + " tu dispositivo ha sido registrado correctamente");
+                        if (response.isSuccessful()) {
+                            if (resObj.geterror().equals("false")) {
+                                btnLogin.setVisibility(View.GONE);
+                                editUsuario.setVisibility(View.GONE);
+                                getActivity().findViewById(R.id.textInputLayout).setVisibility(View.GONE);
+                                mensaje.setVisibility(View.VISIBLE);
+                                mensaje.setText(resObj.getUser() + " tu dispositivo ha sido registrado correctamente");
 
 
-                        } else
+                            } else
 
 
-                            Toast.makeText(getContext(), "Usuario Invalido. Intente de nuevo", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(), "Usuario o Contraseña incorrecta. Intente de nuevo", Toast.LENGTH_SHORT).show();
+                        }
+                        else
+                        {
+                            Toast.makeText(getContext(), "El servidor no responde", Toast.LENGTH_SHORT).show();
+
+                        }
                     }
-
                     @Override
                     public void onFailure(Call call, Throwable t) {
                         Toast.makeText(getContext(), "Verifique su conexión a internet", Toast.LENGTH_SHORT).show();

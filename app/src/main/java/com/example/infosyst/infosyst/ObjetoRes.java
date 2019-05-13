@@ -3,19 +3,6 @@ package com.example.infosyst.infosyst;
 public class ObjetoRes {
 
 
-    private String message;
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-
-
-
     private String error;
 
     public String geterror() {
@@ -26,6 +13,7 @@ public class ObjetoRes {
         this.error = error;
     }
 
+
     private String user;
 
     public String getUser() {
@@ -35,4 +23,21 @@ public class ObjetoRes {
     public void setUser(String user) {
         this.user = user;
     }
-}
+
+
+
+    private String message;
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    }
+
+
+
+

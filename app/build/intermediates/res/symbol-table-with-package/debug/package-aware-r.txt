@@ -1139,6 +1139,7 @@ id dimensions
 id direct
 id disableHome
 id edit_query
+id edtPassword
 id edtUsuario
 id end
 id end_padder
@@ -1264,6 +1265,7 @@ id tag_unhandled_key_listeners
 id text
 id text2
 id textInputLayout
+id textInputLayout2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart

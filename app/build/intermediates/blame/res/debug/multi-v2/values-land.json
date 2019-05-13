@@ -4,7 +4,17 @@
             "outputFile": "C:\\Users\\sistemaS\\Desktop\\Infosyst\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sistemaS\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\21a50b9b6200cb5ccf110efeff7b9e31\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\sistemaS\\.gradle\\caches\\transforms-2\\files-2.1\\831aae4af07ef8944b4989a6227ac460\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\sistemaS\\.gradle\\caches\\transforms-2\\files-2.1\\bf8560f905ce29eafc8ac12d30161473\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "8",
                         "endColumns": "10",
                         "endOffsets": "431"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\sistemaS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35ca4f9459ecf62cab906f62e3b3a28d\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
                     }
                 }
             ]

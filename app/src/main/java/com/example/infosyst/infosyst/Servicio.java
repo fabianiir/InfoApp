@@ -10,5 +10,7 @@ public interface Servicio {
     @FormUrlEncoded
     @Headers("Content-Type:application/x-www-form-urlencoded")
     @POST("login/")
-    Call<ObjetoRes> login(@Field("username") String username, @Field("Fire_token") String fire_token);
+    Call<ObjetoRes> login(@Field("username") String username,
+                          @Field("Fire_token") String fire_token,
+                          @Field("password") String password);
 }
