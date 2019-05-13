@@ -1,0 +1,4 @@
+#Fri May 10 10:50:41 GMT-06:00 2019
+base.0=C\:\\Users\\sistemaS\\Desktop\\Infosyst\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
+path.0=classes.dex
+renamed.0=classes.dex

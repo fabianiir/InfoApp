@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1094287631586-l8e0jfl4vgip8c8msqp5isof0thsjv4l.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://infoempleados-6abcb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1094287631586</string>
+    <string name="google_api_key" translatable="false">AIzaSyARMQFg00Zljw_ppc7YTOMG9vy3K_PTZ4U</string>
+    <string name="google_app_id" translatable="false">1:1094287631586:android:eb9a262d1e436551</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyARMQFg00Zljw_ppc7YTOMG9vy3K_PTZ4U</string>
+    <string name="google_storage_bucket" translatable="false">infoempleados-6abcb.appspot.com</string>
+    <string name="project_id" translatable="false">infoempleados-6abcb</string>
+</resources>
