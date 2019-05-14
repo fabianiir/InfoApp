@@ -136,6 +136,7 @@ public class SingUPFragment extends Fragment {
                             .build();
 
                     Servicio service = retrofit.create(Servicio.class);
+
                     Call call = service.SingUp(usuario, token, password);
                     call.enqueue(new Callback() {
                         @Override
@@ -143,8 +144,6 @@ public class SingUPFragment extends Fragment {
                             ObjetoRes resObj = (ObjetoRes) response.body();
                             if (resObj.geterror().equals("false")) {
 
-
-                                getActivity().getSupportFragmentManager().beginTransaction().remove(new SingUPFragment()).commit();
 
                                 Toast.makeText(getContext(), resObj.getMessage(), Toast.LENGTH_SHORT).show();
 

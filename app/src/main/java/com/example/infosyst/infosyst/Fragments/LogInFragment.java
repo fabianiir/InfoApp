@@ -155,7 +155,7 @@ public class LogInFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_container, new SingUPFragment());
+                fragmentTransaction.replace(R.id.fragment_container, new SingUPFragment(),"SINUPFRAG");
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
