@@ -13,4 +13,13 @@ public interface Servicio {
     Call<ObjetoRes> login(@Field("username") String username,
                           @Field("Fire_token") String fire_token,
                           @Field("password") String password);
+
+
+    @FormUrlEncoded
+    @Headers("Content-Type:application/x-www-form-urlencoded")
+    @POST("SingUP/")
+    Call<ObjetoRes> SingUp(@Field("username") String username,
+                          @Field("Fire_token") String fire_token,
+                          @Field("password") String password);
+
 }
