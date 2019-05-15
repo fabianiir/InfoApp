@@ -17,7 +17,9 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/colorPrimary"
             android:text="Registrar"
+            android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,6 +40,9 @@
                 android:id="@+id/edtUsuarioSUP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_person"
+                android:foregroundTint="@color/colorPrimary"
                 android:hint="Usuario" />
 
         </android.support.design.widget.TextInputLayout>
@@ -58,6 +63,9 @@
                 android:id="@+id/edtPasswordSUP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_pass"
+                android:foregroundTint="@color/colorPrimary"
                 android:hint="Contraseña"
                 android:inputType="textPassword" />
 
@@ -79,6 +87,9 @@
                 android:id="@+id/edtPasswordConfirm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_pass"
+                android:foregroundTint="@color/colorPrimary"
                 android:hint="Confirmar Contraseña"
                 android:inputType="textPassword" />
 

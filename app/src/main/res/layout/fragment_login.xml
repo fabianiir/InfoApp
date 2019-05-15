@@ -17,7 +17,10 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
+            android:autoText="false"
+            android:backgroundTint="@color/colorPrimary"
             android:text="Iniciar Sesión"
+            android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +41,12 @@
                 android:id="@+id/edtUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Usuario" />
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_person"
+                android:foregroundTint="@color/colorPrimary"
+                android:hint="Usuario"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -59,7 +67,12 @@
                 android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword" />
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_pass"
+                android:foregroundTint="@color/colorPrimary"
+                android:inputType="textPassword"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -84,7 +97,7 @@
             android:layout_marginEnd="8dp"
             android:backgroundTint="#031E88E5"
             android:src="@drawable/ic_person_add"
-            android:tint="#3949AB"
+            android:tint="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
