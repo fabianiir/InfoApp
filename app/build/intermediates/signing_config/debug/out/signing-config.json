@@ -1,1 +1,1 @@
-{"mName":"externalOverride","mStoreFile":"C:\\Users\\sistemaS\\Desktop\\llave.jks","mStorePassword":"fabian1119","mKeyAlias":"key0","mKeyPassword":"fabian1119","mStoreType":"jks","mV1SigningEnabled":true,"mV2SigningEnabled":true}
+{"mName":"debug","mStoreFile":"C:\\Users\\sistemaS\\.android\\debug.keystore","mStorePassword":"android","mKeyAlias":"AndroidDebugKey","mKeyPassword":"android","mStoreType":"jks","mV1SigningEnabled":true,"mV2SigningEnabled":true}

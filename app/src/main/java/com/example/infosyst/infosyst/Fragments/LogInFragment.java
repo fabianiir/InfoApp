@@ -105,7 +105,7 @@ public class LogInFragment extends Fragment {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                usuario = editUsuario.getText().toString();
+                usuario = editUsuario.getText().toString().trim();
                 pass = editPass.getText().toString();
 
                 Gson gson = new GsonBuilder()
@@ -155,7 +155,7 @@ public class LogInFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_container, new SingUPFragment(),"SINUPFRAG");
+                fragmentTransaction.replace(R.id.fragment_container, new SingUPFragment());
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }

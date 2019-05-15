@@ -5,35 +5,39 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.4.0"
-    timestamp="1557862135489"
+    timestamp="1557940505721"
     token="-7500217118742013111"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="901" />
+        duration="1650" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="131" />
     <task
         name="verifier"
-        duration="0" />
+        duration="87" />
 
     <artifact
-        location="C:\Users\sistemaS\Desktop\Infosyst\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        location="C:\Users\sistemaS\Desktop\Infosyst\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1557859025793"
+        timestamp="1557940088642"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\sistemaS\Desktop\Infosyst\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\sistemaS\Desktop\Infosyst\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="C:\Users\sistemaS\Desktop\Infosyst\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
@@ -67,34 +71,14 @@
         <artifact
             location="C:\Users\sistemaS\Desktop\Infosyst\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\sistemaS\Desktop\Infosyst\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="METHOD_ANNOTATION_CHANGE"
-        timestamp="1557859559660"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\sistemaS\Desktop\Infosyst\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1557861839052"
+        timestamp="1557940505721"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\sistemaS\Desktop\Infosyst\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1557862135489"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\sistemaS\Desktop\Infosyst\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
     </build>
 

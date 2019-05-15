@@ -119,7 +119,7 @@ public class SingUPFragment extends Fragment {
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                usuario = edtUsuarioSUP.getText().toString();
+                usuario = edtUsuarioSUP.getText().toString().trim();
                 password = edtPasswordSUP.getText().toString();
                 passwordConfirm = edtConfirmPass.getText().toString();
 
@@ -144,10 +144,15 @@ public class SingUPFragment extends Fragment {
                             ObjetoRes resObj = (ObjetoRes) response.body();
                             if (resObj.geterror().equals("false")) {
 
-
-                                Toast.makeText(getContext(), resObj.getMessage(), Toast.LENGTH_SHORT).show();
-
-
+                                if (resObj.getMessage().equals("Registro Correcto")) {
+                                    Toast.makeText(getContext(), resObj.getMessage(), Toast.LENGTH_SHORT).show();
+                                    FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                                    fragmentTransaction.replace(R.id.fragment_container, new LogInFragment());
+                                    fragmentTransaction.addToBackStack(null);
+                                    fragmentTransaction.commit();
+                                } else {
+                                    Toast.makeText(getContext(), resObj.getMessage(), Toast.LENGTH_SHORT).show();
+                                }
                             } else {
                                 Toast.makeText(getContext(), resObj.getMessage(), Toast.LENGTH_SHORT).show();
 
