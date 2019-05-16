@@ -19,6 +19,7 @@ MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\sist
 MERGED from [com.android.support:support-v4:28.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\62ceda54b057ce89a1af311b42bbdbcb\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\b69429f4157e6be8d6ed8fdd7687db7b\AndroidManifest.xml:17:1-22:12
 MERGED from [com.jakewharton:butterknife:8.1.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\65448d8958eec81b57afe1657e699a6f\AndroidManifest.xml:2:1-7:12
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\e6d7a7e78e904683ed2cb7276db1186e\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\9a629cae84d3284d0219deb4b646879d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\addca4253d05c8c44d9cae5315b59f8e\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\0175b511eb5c191d068c195dc9e95e73\AndroidManifest.xml:17:1-22:12
@@ -94,6 +95,8 @@ MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\sistema
 MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\6b7a0ada2ce11fc065c123488dbfbd6b\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\169490d3c4c78339e2c07d0107705d77\AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\169490d3c4c78339e2c07d0107705d77\AndroidManifest.xml:22:5-26:19
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\e6d7a7e78e904683ed2cb7276db1186e\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\e6d7a7e78e904683ed2cb7276db1186e\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\8aaedf90206a5fbbbdf3db29a35923b5\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\8aaedf90206a5fbbbdf3db29a35923b5\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\e59304b1f4ab465b6dce95bbace13d4c\AndroidManifest.xml:22:5-23:19
@@ -188,6 +191,8 @@ MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\sistemaS\.grad
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\b69429f4157e6be8d6ed8fdd7687db7b\AndroidManifest.xml:20:5-44
 MERGED from [com.jakewharton:butterknife:8.1.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\65448d8958eec81b57afe1657e699a6f\AndroidManifest.xml:5:5-43
 MERGED from [com.jakewharton:butterknife:8.1.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\65448d8958eec81b57afe1657e699a6f\AndroidManifest.xml:5:5-43
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\e6d7a7e78e904683ed2cb7276db1186e\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\e6d7a7e78e904683ed2cb7276db1186e\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\9a629cae84d3284d0219deb4b646879d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\9a629cae84d3284d0219deb4b646879d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\sistemaS\.gradle\caches\transforms-2\files-2.1\addca4253d05c8c44d9cae5315b59f8e\AndroidManifest.xml:20:5-44

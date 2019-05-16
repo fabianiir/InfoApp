@@ -1,5 +1,7 @@
 package com.example.infosyst.infosyst.Fragments;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -14,9 +16,11 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.infosyst.infosyst.MainActivity;
 import com.example.infosyst.infosyst.ObjetoRes;
 import com.example.infosyst.infosyst.R;
 import com.example.infosyst.infosyst.Servicio;
+import com.example.infosyst.infosyst.UsuarioFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
@@ -30,6 +34,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import static com.example.infosyst.infosyst.MainActivity.guardarValor;
 
 
 public class LogInFragment extends Fragment {
@@ -77,8 +83,7 @@ public class LogInFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_login, container, false);
         final EditText editUsuario = v.findViewById(R.id.edtUsuario);
         final EditText editPass = v.findViewById(R.id.edtPassword);
-        final TextView mensaje = v.findViewById(R.id.mensaje);
-        final Button btnLogin = (Button) v.findViewById(R.id.btnLogin);
+        final Button btnLogin = v.findViewById(R.id.btnLogin);
         final ImageButton btnSinUP = v.findViewById(R.id.btnSingUp);
 
         FirebaseApp.initializeApp(getContext());
@@ -124,13 +129,14 @@ public class LogInFragment extends Fragment {
                         ObjetoRes resObj = (ObjetoRes) response.body();
                         if (response.isSuccessful()) {
                             if (resObj.geterror().equals("false")) {
-                                btnLogin.setVisibility(View.GONE);
-                                editUsuario.setVisibility(View.GONE);
-                                editPass.setVisibility(View.GONE);
-                                getActivity().findViewById(R.id.textInputLayout).setVisibility(View.GONE);
-                                mensaje.setVisibility(View.VISIBLE);
-                                mensaje.setText(resObj.getUser() + " tu dispositivo ha sido registrado correctamente");
 
+                                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                                fragmentTransaction.replace(R.id.fragment_container, new UsuarioFragment());
+                                fragmentTransaction.addToBackStack(null);
+                                fragmentTransaction.commit();
+
+                                guardarValor(getContext(),"user",usuario);
+                                guardarValor(getContext(),"token",token);
 
                             } else
 
@@ -167,15 +173,6 @@ public class LogInFragment extends Fragment {
     }
 
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
+
 
 }
