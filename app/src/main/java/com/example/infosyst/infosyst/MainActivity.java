@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import com.example.infosyst.infosyst.Fragments.InfoEmpleadosFragment;
 import com.example.infosyst.infosyst.Fragments.NotificacionesFragment;
 import com.example.infosyst.infosyst.Fragments.LogInFragment;
+import com.example.infosyst.infosyst.Fragments.UsuarioFragment;
 
 public class MainActivity extends AppCompatActivity {
     private static String PREFS_KEY = "MY_PREFERENCES";
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Administrador de Fragments, se despliega fragment de Notificaciones
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        NotificacionesFragment fragment = new NotificacionesFragment();
+        final NotificacionesFragment fragment = new NotificacionesFragment();
         fragmentTransaction.replace(R.id.fragment_container, fragment);
         fragmentTransaction.commit();
 
@@ -52,12 +53,14 @@ public class MainActivity extends AppCompatActivity {
                         {
                             LogInFragment fragmentRegistrar = new LogInFragment();
                             fragmentTransaction.replace(R.id.fragment_container, fragmentRegistrar);
+                            fragmentTransaction.addToBackStack(null);
                             fragmentTransaction.commit();
                         }
                         else
                         {
                             UsuarioFragment fragmentUsuario = new UsuarioFragment();
                             fragmentTransaction.replace(R.id.fragment_container, fragmentUsuario);
+                            fragmentTransaction.addToBackStack(null);
                             fragmentTransaction.commit();
                         }
 
@@ -67,12 +70,14 @@ public class MainActivity extends AppCompatActivity {
 
                         NotificacionesFragment fragment = new NotificacionesFragment();
                         fragmentTransaction.replace(R.id.fragment_container, fragment);
+                        fragmentTransaction.addToBackStack(null);
                         fragmentTransaction.commit();
                         break;
                     case R.id.navigation_infoempleados:
 
                         InfoEmpleadosFragment fragmentIWeb = new InfoEmpleadosFragment();
                         fragmentTransaction.replace(R.id.fragment_container, fragmentIWeb);
+                        fragmentTransaction.addToBackStack(null);
                         fragmentTransaction.commit();
                         break;
                     default:
@@ -102,5 +107,10 @@ public class MainActivity extends AppCompatActivity {
         return preferences.getString(keyPref,"");
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
 
+        finish();
+    }
 }

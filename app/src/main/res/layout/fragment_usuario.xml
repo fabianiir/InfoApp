@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UsuarioFragment">
+    tools:context=".Fragments.UsuarioFragment">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/profile_image"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ImageProfile"
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:layout_marginStart="157dp"
             android:layout_marginTop="68dp"
             android:layout_marginEnd="158dp"
             android:src="@drawable/ic_person"
-            app:civ_border_color="#FF000000"
+            app:civ_border_color="@color/colorPrimary"
             app:civ_border_width="2dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -43,13 +43,12 @@
             android:id="@+id/usuariotv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="182dp"
+            android:layout_marginStart="141dp"
             android:layout_marginTop="32dp"
-            android:layout_marginEnd="181dp"
+            android:layout_marginEnd="141dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+            app:layout_constraintTop_toBottomOf="@+id/ImageProfile" />
 
     </android.support.constraint.ConstraintLayout>
 

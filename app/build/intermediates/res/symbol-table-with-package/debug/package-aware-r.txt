@@ -1078,6 +1078,7 @@ drawable tooltip_frame_light
 id ALT
 id CTRL
 id FUNCTION
+id ImageProfile
 id InfoempleadosWeb
 id META
 id SHIFT
@@ -1114,6 +1115,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnBack
 id btnLogOut
 id btnLogin
 id btnRegistrar
@@ -1220,7 +1222,6 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
-id profile_image
 id progress_circular
 id progress_horizontal
 id radio

@@ -1,6 +1,5 @@
-package com.example.infosyst.infosyst;
+package com.example.infosyst.infosyst.Fragments;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,8 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.infosyst.infosyst.Fragments.LogInFragment;
-import com.example.infosyst.infosyst.Fragments.SingUPFragment;
+import com.example.infosyst.infosyst.R;
 
 import static com.example.infosyst.infosyst.MainActivity.guardarValor;
 import static com.example.infosyst.infosyst.MainActivity.leervalor;

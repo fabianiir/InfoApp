@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.infosyst.infosyst.ObjetoRes;
@@ -94,6 +95,23 @@ public class SingUPFragment extends Fragment {
         final EditText edtUsuarioSUP = v.findViewById(R.id.edtUsuarioSUP);
         final EditText edtPasswordSUP = v.findViewById(R.id.edtPasswordSUP);
         final EditText edtConfirmPass = v.findViewById(R.id.edtPasswordConfirm);
+        final ImageButton btnBack= v.findViewById(R.id.btnBack);
+
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, new LogInFragment());
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+
+            }
+        });
+
+
+
         FirebaseApp.initializeApp(getContext());
         FirebaseInstanceId.getInstance().getInstanceId()
                 .addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
@@ -196,4 +214,6 @@ public class SingUPFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
+
 }
